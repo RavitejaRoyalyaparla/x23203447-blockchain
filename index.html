@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Crypto Basketball Online Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <style>
+
+.tab-slider--nav {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+}
+.tab-slider--tabs {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	border-radius: 35px;
+	overflow: hidden;
+	background: #fff;
+	height: 35px;
+	user-select: none;
+	&:after {
+		content: "";
+		width: 50%;
+		background: #345f90;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 250ms ease-in-out;
+		border-radius: 35px;
+	}
+	&.slide:after {
+		left: 50%;
+	}
+}
+
+.tab-slider--trigger {
+	font-size: 12px;
+	line-height: 1;
+	font-weight: bold;
+	color: #345f90;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 11px 35px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	display: inline-block;
+	transition: color 250ms ease-in-out;
+	user-select: none;
+	&.active {
+		color: #fff;
+	}
+}
+.tab-slider--body {
+	margin-bottom: 20px;
+}
+
+.buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+  .curve {
+  background: #345f90;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  text-decoration: none; }
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-trending-up"></i> <span>Live API</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-basketball"></i> <span>Products</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>CRYPTO BASKET</h1>
+      <p>Online Basketball <span class="typed" data-typed-items="Store, With, Crypto, Currency."></span></p>
+      <button id="loginMeta" class="curve">Login With Metamask</button>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main" style="display:none;">
+
+     <!-- ======= Testimonials Section ======= -->
+    <section id="about" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Welcome to the digital court where crypto meets basketball! Dive into the world of blockchain-powered sports excitement.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p style="height:250px;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    We dream of bringing the thrill of crypto basketball to everyone. With a passion for innovation, we've developed a platform where fans can experience blockchain-powered sports accessories to all.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Bit Satoshi</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p style="height:250px;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                   As the designer behind the scenes, we develop visually stunning experiences that capture the dynamic fusion of basketball and blockchain.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Eth Buterin</h3>
+                <h4>R&D</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p style="height:250px;">
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                   With expertise in blockchain integration, we ensures a secure and transparent environment, elevating the crypto basketball experience to new heights.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Doge Markus</h3>
+                <h4>Blockchain Expert</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts" style="height:500px;overflow:scroll;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Live NBA Game Scores API</h2>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div id="wg-api-basketball-games"
+               data-host="api-basketball.p.rapidapi.com"
+               data-key="de9bf44b2amsheb30ae5006070f1p15ed78jsnc65a2ddf956e"
+               data-date=""
+               data-league="12"
+               data-season="2023-2024"
+               data-theme=""
+               data-refresh="300"
+               data-show-toolbar="true"
+               data-show-errors="false"
+               data-show-logos="true"
+               data-modal-game="true"
+               data-modal-standings="true"
+               data-modal-show-logos="true">
+          </div>
+        <script
+            type="module"
+            src="https://widgets.api-sports.io/2.0.3/widgets.js">
+        </script>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Products</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_one.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_two.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_three.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_four.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_five.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="img/basket_six.jpg" class="img-fluid" alt="" style="border-radius:10px;height:400px;width:400px;">
+              <div class="portfolio-links">
+                <a href="javascript:void(0)" class="buyItem">Buy for 0.0001 ETH</a>
+              </div>
+            </div>
+          </div>
+        
+
+         
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+        </div>
+
+        <div class="container">
+          <div class="tab-slider--nav mb-5">
+            <ul class="tab-slider--tabs">
+              <li class="tab-slider--trigger active" rel="tab1">Wallet</li>
+              <li class="tab-slider--trigger" rel="tab2">Manage Account</li>
+            </ul>
+          </div>
+          <div class="tab-slider--container">
+            <div id="tab1" class="tab-slider--body">
+              <form id="redeemForm" class="php-email-form p-5">
+                <div class="row form-group">
+                  <div class="col-12 mb-3">
+                    <input type="text" name="name" class="form-control" id="accountAddress"
+                      placeholder="Metamask account number" required style="width: 400px;display: block; margin-left:auto;margin-right:auto;">
+                  </div>
+                  <div class="col-12 mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="email" id="enteredEther" placeholder="Enter Amount In ETH"
+                      required style="width: 400px;display: block; margin-left:auto;margin-right:auto;">
+                  </div>
+                </div>
+                <div class="one mt-4">
+                  <a href="#"><button class="curve" id="redeemNow">Withdraw into Account</button></a>
+                </div>
+              </form>
+            </div>
+            <div id="tab2" class="tab-slider--body">
+              <div class="row">
+                <div class="col-6">
+                    <div id="readArea"> <!-- READING FROM CONTRACT -->
+                        <button id="connectMetamask" class="curve">Connect to METAMASK Account</button>
+                        <p id="userArea">Status: Not connected to Metamask</p>
+                        <button id="connectContract" class="curve">Connect With Contract</button>
+                        <p id="contractArea">Status: Not connected to Contract</p>
+                        <button id="getContractAccount" class="curve">Get Contract Address</button>
+                        <p id="contractAccount">Contract Account: Not Connected to Contract</p>
+                        <button id="getBalance" class="curve">ETH In the Contract</button>
+                        <p id="balanceArea">Balance: Not Connected to Contract</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="writeArea"><!-- WRITING TO CONTRACT -->
+                        <h5>Transactions:</h5><br>
+                        <input type="number" id="depositInput" placeholder="Enter Amount In ETH" style="width: 250px;display: block;">
+                        <button id="depositContract" class="curve mt-3 mb-3">Add Ether to Contract</button>
+                        <input type="text" class="mt-2" id="addressInput" placeholder="Enter Account Address" style="width: 400px;display: block;">
+                        <input type="number"class="mt-2" id="amountInput" placeholder="Enter Amount In ETH" style="width: 400px;display: block;">
+                        <button id="withdraw" class="curve mt-3 mb-3">Transfer ETH to Metamask</button>
+                    </div>
+
+                </div>
+            </div>
+              
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-12 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>C102 Cabra Road, Nashville, CB</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@cryptobasketball.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+351 5545 555 55</p>
+              </div>
+
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6828975201965!2d-6.245567723650382!3d53.348932374530456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1710257980680!5m2!1sen!2sie" width="600" height="450" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/typed.js/typed.umd.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
