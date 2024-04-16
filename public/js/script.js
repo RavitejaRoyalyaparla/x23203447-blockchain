@@ -54,7 +54,7 @@ $(document).ready(function () {
           type: "function",
         },
     ];
-    const contractAddress = "0xbFD196df28208e84DE102AACf95Aa93dEA385b18";
+    const contractAddress = "0x2ABA40dEB36c09eBe360F0AB5C17d4555a627141";
 
     const handleLogin = async () => {
       var userStatus;

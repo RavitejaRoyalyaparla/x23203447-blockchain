@@ -1883,12 +1883,12 @@
     "11155111": {
       "events": {},
       "links": {},
-      "address": "0xbFD196df28208e84DE102AACf95Aa93dEA385b18",
-      "transactionHash": "0x47c9b0d9d2ac7e5e061a3e0d98cd13a25837a196fedac5e3398c8b1a4ab7a5cc"
+      "address": "0x2ABA40dEB36c09eBe360F0AB5C17d4555a627141",
+      "transactionHash": "0x3cb2ed3f35a254e373a4bfdc38bb5d8e67a655b3187c3861608062c6b3cd27cd"
     }
   },
   "schemaVersion": "3.4.16",
-  "updatedAt": "2024-04-16T16:01:28.972Z",
+  "updatedAt": "2024-04-16T17:19:29.332Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
